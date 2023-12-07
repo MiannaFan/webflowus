@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journal</title>
+    <link rel="stylesheet" href="./style/webflow.css" />
+    <link rel="stylesheet" href="./style/journal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-indicator" style="opacity: 1">
+        <div class="prloader-fill" style="width: 100%; height: 2px"></div>
+      </div>
+      <div class="loaderTop"></div>
+      <div class="loaderDown"></div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="indicator-wrapper">
+        <div class="indicator"></div>
+      </div>
+      <div class="indicator-icon">
+        <a href="https://www.instagram.com/tycreated/">
+          <img
+            src="./assets/607cab53e6616e396c26248d_covilla-instagram.svg"
+            alt="instagram"
+          />
+        </a>
+        <a href="https://twitter.com/Tycreated">
+          <img
+            src="./assets/607cabf547737e63dc8037be_covilla-facebook-f.svg"
+            alt="facebook"
+          />
+        </a>
+        <a href="https://twitter.com/Tycreated">
+          <img
+            src="./assets/607cac42e7c14c5ffb7408b0_covilla-linkedin.svg"
+            alt="linkin"
+          />
+        </a>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="guide">
+        <img src="./assets/1614628-200.png" alt="guide" />
+      </div>
+      <div class="flyout_menu" style="left: -28rem">
+        <div class="flyout_content">
+          <div class="flyout-heading">
+            <h2>Explore vacations</h2>
+          </div>
+          <div class="vocation_continent">
+            <div class="vocation_title">
+              <div class="subtitle">Choose a Continent</div>
+              <div class="horizontal_line"></div>
+            </div>
+            <div class="continentList">
+              <div class="listitem africa">
+                <a href="./index.html">
+                  <div class="title">
+                    <h4>Africa</h4>
+                    <div class="vocationDetail">6 VACATIONS</div>
+                  </div>
+                  <div class="arrow">
+                    <span class="lnr lnr-chevron-right"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="listitem asia">
+                <a href="./index.html">
+                  <div class="title">
+                    <h4>Asia</h4>
+                    <div class="vocationDetail">6 VACATIONS</div>
+                  </div>
+                  <div class="arrow">
+                    <span class="lnr lnr-chevron-right"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="listitem europe">
+                <a href="./index.html">
+                  <div class="title">
+                    <h4>Europe</h4>
+                    <div class="vocationDetail">12 VACATIONS</div>
+                  </div>
+                  <div class="arrow">
+                    <span class="lnr lnr-chevron-right"></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="vocation_title">
+              <div class="subtitle">Choose a Destination</div>
+              <div class="horizontal_line" id="destinations_title"></div>
+            </div>
+            <div class="continentList">
+              <div class="listitem france">
+                <a href="./index.html">
+                  <div class="title">
+                    <h4>France</h4>
+                    <div class="vocationDetail">6 VACATIONS</div>
+                  </div>
+                  <div class="arrow">
+                    <span class="lnr lnr-chevron-right"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="listitem indonesia">
+                <a href="./index.html">
+                  <div class="title">
+                    <h4>Indonesia</h4>
+                    <div class="vocationDetail">6 VACATIONS</div>
+                  </div>
+                  <div class="arrow">
+                    <span class="lnr lnr-chevron-right"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="listitem greece">
+                <a href="./index.html">
+                  <div class="title">
+                    <h4>Greece</h4>
+                    <div class="vocationDetail">6 VACATIONS</div>
+                  </div>
+                  <div class="arrow">
+                    <span class="lnr lnr-chevron-right"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="listitem egypt">
+                <a href="./index.html">
+                  <div class="title">
+                    <h4>Egypt</h4>
+                    <div class="vocationDetail">6 VACATIONS</div>
+                  </div>
+                  <div class="arrow">
+                    <span class="lnr lnr-chevron-right"></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="vocation_title">
+              <div class="subtitle">CONTACT US</div>
+              <div class="horizontal_line"></div>
+            </div>
+            <div class="contactList">
+              <div class="contactitem">
+                <a href="https://calendly.com/">
+                  <div class="vocationDetail">Schedule a call</div>
+                  <div class="arrowContact">
+                    <span class="lnr lnr-chevron-right"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="contactitem">
+                <a href="mailto:info@template.com?subject=Hey!">
+                  <div class="vocationDetail">info@template.com</div>
+                  <div class="arrowContact">
+                    <span class="lnr lnr-chevron-right"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="contactitem">
+                <a href="tel:+15555555555">
+                  <div class="vocationDetail">(555)555-5555</div>
+                  <div class="arrowContact">
+                    <span class="lnr lnr-chevron-right"></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="contactIcon">
+              <div class="title">FOLLOW US:</div>
+              <div class="indicator-icon">
+                <a href="https://www.instagram.com/tycreated/">
+                  <img
+                    src="./assets/607cab53e6616e396c26248d_covilla-instagram.svg"
+                    alt="instagram"
+                  />
+                </a>
+                <a href="https://twitter.com/Tycreated">
+                  <img
+                    src="./assets/607cabf547737e63dc8037be_covilla-facebook-f.svg"
+                    alt="facebook"
+                  />
+                </a>
+                <a href="https://twitter.com/Tycreated">
+                  <img
+                    src="./assets/607cac42e7c14c5ffb7408b0_covilla-linkedin.svg"
+                    alt="linkin"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navContent">
+        <header class="header"></header>
+        <a href="./index.html"> <span class="thin-span">Co</span>Villa </a>
+        <div class="navContentTop">
+          <div class="navContentTopMain">
+            <a href="./about.html">ABOUT</a>
+            <a href="./journal.html">JOURNAL</a>
+            <a href="./support.html">SUPPORT</a>
+          </div>
+        </div>
+        <div class="nav-right">
+          <div class="destinations">
+            destinations&nbsp;
+            <span class="lnr lnr-chevron-down"></span>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown" style="opacity: 0">
+        <div class="vocation_title">
+          <div class="subtitle">Choose a Destination</div>
+          <div class="horizontal_line" id="destinations_title"></div>
+        </div>
+        <div class="continentList">
+          <div class="listTop">
+            <div class="listitem france">
+              <a href="./index.html">
+                <div class="title">
+                  <h4>France</h4>
+                  <div class="vocationDetail">6 VACATIONS</div>
+                </div>
+                <div class="arrow">
+                  <span class="lnr lnr-chevron-right"></span>
+                </div>
+              </a>
+            </div>
+            <div class="listitem indonesia">
+              <a href="./index.html">
+                <div class="title">
+                  <h4>Indonesia</h4>
+                  <div class="vocationDetail">6 VACATIONS</div>
+                </div>
+                <div class="arrow">
+                  <span class="lnr lnr-chevron-right"></span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="listDown">
+            <div class="listitem greece">
+              <a href="./index.html">
+                <div class="title">
+                  <h4>Greece</h4>
+                  <div class="vocationDetail">6 VACATIONS</div>
+                </div>
+                <div class="arrow">
+                  <span class="lnr lnr-chevron-right"></span>
+                </div>
+              </a>
+            </div>
+            <div class="listitem egypt">
+              <a href="./index.html">
+                <div class="title">
+                  <h4>Egypt</h4>
+                  <div class="vocationDetail">6 VACATIONS</div>
+                </div>
+                <div class="arrow">
+                  <span class="lnr lnr-chevron-right"></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="mainContent">
+      <div class="overlayMain">
+        <div class="introMain">
+          <div class="intro">
+            <div class="contentLeft">
+              <h2>COVILLA JOURNAL</h2>
+              <h1>Insporation and tips <br />for your next vacation</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlaySection">
+      <div class="popular-post">
+        <div class="post-wraper">
+          <div class="post-main">
+            <div class="post-left">
+              <div class="large-image">
+                <div class="large-image-main"></div>
+              </div>
+              <div class="journal-post">
+                <div class="content">
+                  <div class="title">
+                    <div>April 19, 2021</div>
+                  </div>
+                  <h2>
+                    What Will Website Be<br />
+                    Like In 100 Years?
+                  </h2>
+                  <div class="body-display">
+                    Donec sed auctor orci. In a nisl vel nisi <br />egestas
+                    efficitur nec ac neque. Sed vitae<br />
+                    sollicitudin elit, ac tristique.
+                  </div>
+                  <a href="./index.html">
+                    <div>Read more</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="post-right">
+              <div class="benefit_bottom">
+                <div class="benefitBottom_title">
+                  <div class="subtitle">POPULAR POSTS</div>
+                  <div class="horizontal_line"></div>
+                </div>
+                <div class="benefits-box">
+                  <a href="./index.html" class="benefit-card card1">
+                    <div
+                      class="benefit-icon"
+                      style="
+                        background-image: url(./assets/about-images/607dcc96ac469709cab4439e_post003.jpeg);
+                      "
+                    >
+                      <!-- <img src="./assets/about-images/607dcc96ac469709cab4439e_post003.jpeg" alt="passport"> -->
+                    </div>
+                    <div class="benefit-description">
+                      <div class="title">
+                        <div>April 19, 2021</div>
+                      </div>
+                      <div class="body-display">
+                        7 of the Best Examples <br />of Beautiful Blog Design
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./index.html" class="benefit-card card1">
+                    <div
+                      class="benefit-icon"
+                      style="
+                        background-image: url(./assets/about-images/607dcc84b5be0d0f5f378014_post002.jpeg);
+                      "
+                    >
+                      <!-- <img src="./assets/about-images/607dcc84b5be0d0f5f378014_post002.jpeg" alt="passport"> -->
+                    </div>
+                    <div class="benefit-description">
+                      <div class="title">
+                        <div>April 19, 2021</div>
+                      </div>
+                      <div class="body-display small">
+                        Designers Who Changed the Web
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./index.html" class="benefit-card card1 card2">
+                    <div
+                      class="benefit-icon"
+                      style="
+                        background-image: url(./assets/about-images/607dccc6e99d455d30eb59a4_post006.jpeg);
+                      "
+                    >
+                      <!-- <img src="./assets/about-images/607dccc6e99d455d30eb59a4_post006.jpeg" alt="passport"> -->
+                    </div>
+                    <div class="benefit-description">
+                      <div class="title">
+                        <div>April 19, 2021</div>
+                      </div>
+                      <div class="body-display small">
+                        <div>10 Web Design Blogs You Can't Miss</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./index.html" class="benefit-card card2">
+                    <div
+                      class="benefit-icon"
+                      style="
+                        background-image: url(./assets/about-images/607dcd0c2a32b5e7275ff68b_post009.jpeg);
+                      "
+                    >
+                      <!-- <img src="./assets/about-images/607dcd0c2a32b5e7275ff68b_post009.jpeg" alt="passport"> -->
+                    </div>
+                    <div class="benefit-description">
+                      <div class="title">
+                        <div>April 19, 2021</div>
+                      </div>
+                      <div class="body-display small">
+                        <div>5 Principles Of Effective Web Design</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="benefit_wrap">
+        <div class="benefit">
+          <div class="subtitle">RECENT POSTS</div>
+          <h1>Browse our journal</h1>
+          <div class="journalList">
+            <div class="journalCard">
+              <div class="journalImage card1"></div>
+              <div class="contentWrap">
+                <div class="content">
+                  <div class="title">
+                    <div>April 19, 2021</div>
+                  </div>
+                  <h3>
+                    What Will Website Be<br />
+                    Like In 100 Years?
+                  </h3>
+                  <div class="body-display">
+                    Donec sed auctor orci. In a nisl vel nisi <br />egestas
+                    efficitur nec ac neque. Sed vitae<br />
+                    sollicitudin elit, ac tristique.
+                  </div>
+                  <a href="./index.html">
+                    <div>Read more</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="journalCard">
+              <div class="journalImage card2"></div>
+              <div class="contentWrap">
+                <div class="content">
+                  <div class="title">
+                    <div>April 19, 2021</div>
+                  </div>
+                  <h3>
+                    Designers Who<br />
+                    Changed the Web
+                  </h3>
+                  <div class="body-display">
+                    Donec sed auctor orci. In a nisl vel nisi <br />egestas
+                    efficitur nec ac neque. Sed vitae<br />
+                    sollicitudin elit, ac tristique.
+                  </div>
+                  <a href="./index.html">
+                    <div>Read more</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="journalCard">
+              <div class="journalImage card3"></div>
+              <div class="contentWrap">
+                <div class="content">
+                  <div class="title">
+                    <div>April 19, 2021</div>
+                  </div>
+                  <h3>
+                    10 Web Design Blogs<br />
+                    You Can't Miss
+                  </h3>
+                  <div class="body-display">
+                    Donec sed auctor orci. In a nisl vel nisi <br />egestas
+                    efficitur nec ac neque. Sed vitae<br />
+                    sollicitudin elit, ac tristique.
+                  </div>
+                  <a href="./index.html">
+                    <div>Read more</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="journalList">
+            <div class="journalCard">
+              <div class="journalImage card4"></div>
+              <div class="contentWrap">
+                <div class="content">
+                  <div class="title">
+                    <div>April 19, 2021</div>
+                  </div>
+                  <h3>
+                    5 Principles Of Effective<br />
+                    Web Design
+                  </h3>
+                  <div class="body-display">
+                    Donec sed auctor orci. In a nisl vel nisi <br />egestas
+                    efficitur nec ac neque. Sed vitae<br />
+                    sollicitudin elit, ac tristique.
+                  </div>
+                  <a href="./index.html">
+                    <div>Read more</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="journalCard">
+              <div class="journalImage card5"></div>
+              <div class="contentWrap">
+                <div class="content">
+                  <div class="title">
+                    <div>April 19, 2021</div>
+                  </div>
+                  <h3>
+                    How to improve Web<br />
+                    Design Process
+                  </h3>
+                  <div class="body-display">
+                    Donec sed auctor orci. In a nisl vel nisi <br />egestas
+                    efficitur nec ac neque. Sed vitae<br />
+                    sollicitudin elit, ac tristique.
+                  </div>
+                  <a href="./index.html">
+                    <div>Read more</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="journalCard">
+              <div class="journalImage card6"></div>
+              <div class="contentWrap">
+                <div class="content">
+                  <div class="title">
+                    <div>April 19, 2021</div>
+                  </div>
+                  <h3>14 Common <br />Misconceptions About <br />Web Design</h3>
+                  <div class="body-display">
+                    Donec sed auctor orci. In a nisl vel nisi <br />egestas
+                    efficitur nec ac neque. Sed vitae<br />
+                    sollicitudin elit, ac tristique.
+                  </div>
+                  <a href="./index.html">
+                    <div>Read more</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="next">
+            <div class="choose_destination">
+              <a href="./support.html"
+                >NEXT &nbsp;
+                <span class="lnr lnr-chevron-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="promise">
+          <div class="grey_cover">
+            <div class="overlay"></div>
+            <div class="promise-intro">
+              <div>
+                <div class="subtitle-wrapper">
+                  <div class="subtitle">Covilla Promise</div>
+                </div>
+                <h1>
+                  Get unparalleled peace of mind <br />from start to finish of
+                  your trip
+                </h1>
+              </div>
+              <div class="dual-buttons">
+                <a href="/support" class="button white w-inline-block">
+                  <div>Contact us</div>
+                </a>
+                <a href="#steps" class="outline-button white w-inline-block">
+                  <div>How it works</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footerMain">
+          <div class="footerContent">
+            <div class="footerLeft">
+              <div class="destination">destinations</div>
+              <a href="./index.html">FRANCE</a>
+              <a href="./index.html">INDONESIA</a>
+              <a href="./index.html">GREECE </a>
+              <a href="./index.html">EGYPT </a>
+            </div>
+            <div class="footerRight">
+              <div class="footer-logo">
+                <div><span class="thin-span">co</span>villa</div>
+              </div>
+              <div class="credit-text">© 2021 COVILLA</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./journal.js"></script>
+  </body>
+</html>
